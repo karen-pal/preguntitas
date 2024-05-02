@@ -1,0 +1,56 @@
+h1 { font-family: Ubuntu; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 5vw; 
+
+  text-align: center;
+  color:#b5473d;
+} 
+
+h3 { font-family: Ubuntu; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; 
+
+  text-align: center;
+} 
+p { font-family: Ubuntu; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 40px; } 
+blockquote { font-family: Ubuntu; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
+pre { font-family: Ubuntu; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; } 
+
+
+body {
+
+}
+html{
+    font-family: Ubuntu;
+background: rgba(215,208,192,255);
+  overflow-x: hidden;
+    background-image: url('fondo.png'); /* Specify the URL of your image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; /* Fixed in the background */
+    /* Optionally, you can set background size and position */
+        background-size: contain; /* Scale the background image to fit within the container */
+
+  text-align: center;
+  margin-left:30%;
+}
+
+img {
+
+  position:relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  max-width: 50%;
+  height: auto;
+}
+
+@media (max-width: 600px){
+    p{
+        font-size:6vw;
+    }
+    html {
+
+  margin-right: 0px;
+        font-size:7vw;
+    }
+    h1{
+ line-height: 70%; 
+ }
+
