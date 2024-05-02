@@ -1,6 +1,6 @@
 const pages = [
   // Add more pages as needed
-"paisaje2.jpeg","process.GIF","colonizado.jpeg"
+"paisaje2.jpeg","ni.jpeg","que_es.png","colonizado.jpeg","laura.png","plan.png"
 ];
 
 let currentPageIndex = 0;
