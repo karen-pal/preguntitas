@@ -37,8 +37,14 @@ nextBtn.addEventListener('click', showNextPage);
 loadPage(currentPageIndex);
     const words = ["paradoja", "trabajo", "paisaje", "dicotomia", "ciclo"];
 
-    const links = words.map((word, index) => ({ source: 0, target: index + 1 }));
-
+    const links2 = words.map((word, index) => ({ source: 0, target: index + 1 }));
+    const links = [
+      { source: 0, target: 1 }, // Root to "ideas de nacion"
+      { source: 0, target: 2 }, // Root to "trabajo"
+      { source: 2, target: 3 }, // "trabajo" to "paisaje"
+      { source: 2, target: 4 },  // "trabajo" to "dicotomia"
+      { source: 1, target: 5 }, // Root to "trabajo"
+    ];
     const nodes = [{ id: 0, name: "Ideas de Nación" }, ...words.map((word, index) => ({ id: index + 1, name: word }))];
 
     const svg = d3.select("svg"),
@@ -59,7 +65,7 @@ loadPage(currentPageIndex);
                     .enter().append("circle")
                     .attr("class", "node")
                     .attr("r", 10)
-                    .style("fill", d => d.id === 0 ? "red" : "blue")
+                    .style("fill", d => d.id === 0 ? "white" : "blue")
                     .call(d3.drag()
                             .on("start", dragstarted)
                             .on("drag", dragged)
