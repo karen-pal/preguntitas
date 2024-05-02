@@ -1,20 +1,17 @@
 const pages = [
-  { left: 'ni_left.png', right: 'ni_right.png' },
-  { left: 'nuevo_left.png', right: 'nuevo_right.png' },
   // Add more pages as needed
+"paisaje2.jpeg","process.GIF","colonizado.jpeg"
 ];
 
 let currentPageIndex = 0;
 
-const leftPageImg = document.getElementById('leftPage');
-const rightPageImg = document.getElementById('rightPage');
+const PageImg = document.getElementById('Page');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
 function loadPage(index) {
   const page = pages[index];
-  leftPageImg.src = page.left;
-  rightPageImg.src = page.right;
+  PageImg.src = page; //.left;
 }
 
 function showPrevPage() {
